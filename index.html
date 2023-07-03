@@ -11,52 +11,121 @@
       href="./assets/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>Frontend Mentor | Officelite coming soon site</title>
   </head>
   <body>
-    <header>
-      <img src="./assets/shared/logo.svg" alt="logo app" />
+    <header class="app__header">
+      <img
+        class="app__header-logo"
+        src="./assets/shared/logo.svg"
+        alt="logo app"
+      />
+      <div class="app__header-pattern"></div>
     </header>
-    <main>
-      <section>
-        <h1>A simple solution to complex tasks is coming soon</h1>
-
-        <p>
-          Say goodbye to inefficient juggling of multiple apps, teams, and
-          projects. Officelite is the new collaboration platform built with an
-          intuitive interface to improve productivity.
-        </p>
-        <button>Get Started</button>
-        <div>
+    <main class="app__main">
+      <section class="app__main-principal">
+        <div class="app__main-info">
+          <h1 class="app__title">
+            A simple solution to complex tasks is coming soon
+          </h1>
+          <p class="app__description">
+            Say goodbye to inefficient juggling of multiple apps, teams, and
+            projects. Officelite is the new collaboration platform built with an
+            intuitive interface to improve productivity.
+          </p>
+          <button class="btn btn-primary-blue">Get Started</button>
+        </div>
+        <div class="app__illustrations">
           <img
+            class="app__illustration"
             src="./assets/home/illustration-charts.svg"
             alt="illustration-charts"
           />
         </div>
       </section>
-      <section>
-        <div>
-          <h2>Basic</h2>
-          <span> Free </span>
-          Up to 5 users for free Basic document collaboration 2 gb storage Great
-          security and support Try for Free
+      <section class="flex">
+        <div class="flex-item flex-item-one">
+          <h2 class="title">Basic</h2>
+          <p class="description">
+            <span class="cost"> Free </span>
+            Up to 5 users for free
+          </p>
+          <ul class="benefits">
+            <li class="benefit-item">Basic document collaboration</li>
+            <li class="benefit-item">2b storage</li>
+            <li class="benefit-item">Great security and support</li>
+          </ul>
+          <button class="btn btn-secondary-blue">
+            Try for Free
+          </button>
         </div>
-        <div>
-          Pro $9.99 Per user, billed monthly All essential integrations 50 gb
-          storage More control and insights Try for Free
+        <div class="flex-item flex-item-two">
+          <h2 class="title">Pro</h2>
+          <p class="description">
+            <span class="cost"> $9.99 </span>
+            Per user, billed monthly
+          </p>
+          <ul class="benefits">
+            <li class="benefit-item">All essential integrations</li>
+            <li class="benefit-item">50 gb storage</li>
+            <li class="benefit-item">More control and insights</li>
+          </ul>
+          <button class="btn btn-primary-white">
+            Try for Free
+          </button>
         </div>
-        <div>
-          Ultimate $19.99 Per user, billed monthly Robust work management 100 gb
-          storage VIP support Try for Free
+        <div class="flex-item flex-item-three">
+          <h2 class="title">Ultimate</h2>
+          <p class="description">
+            <span class="cost"> $19.99 </span>
+            Per user, billed monthly
+          </p>
+          <ul class="benefits">
+            <li class="benefit-item">Robuts work management</li>
+            <li class="benefit-item">100 gb storage</li>
+            <li class="benefit-item">VIP support</li>
+          </ul>
+          <button class="btn btn-secondary-blue">
+            Try for Free
+          </button>
         </div>
-      </section>
-      <section>
-        <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-        Coming 4 Nov 2020
-
-        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-        47 Days 07 Hours 56 Min 14 Sec Get Started
       </section>
     </main>
+    <footer class="app__date">
+      <div class="app__date-container">
+        <div class="date">
+          <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+          <p class="estimated-date">
+            Coming <span class="specific-date">4 Nov 2020</span>
+          </p>
+          <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+          <div class="timer">
+            <div class="timer-item">
+              <span class="number">47</span>
+              <p class="data">Days</p>
+            </div>
+            <div class="timer-item">
+              <span class="number">07</span>
+              <p class="data">Hours</p>
+            </div>
+            <div class="timer-item">
+              <span class="number">56</span>
+              <p class="data">Min</p>
+            </div>
+            <div class="timer-item">
+              <span class="number">14</span>
+              <p class="data">Sec</p>
+            </div>
+          </div>
+    
+
+        </div>
+
+        <button class="btn btn-primary-blue">Get Started</button>
+      </div>
+
+    </footer>
   </body>
 </html>
